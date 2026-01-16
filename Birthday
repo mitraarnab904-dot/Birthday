@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday!</title>
+    <style>
+        body { background-color: #ffeef8; text-align: center; font-family: 'Arial', sans-serif; }
+        .box { margin-top: 100px; padding: 20px; border: 2px dashed #ff4d94; display: inline-block; border-radius: 15px; background: white; }
+        button { background: #ff4d94; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="msg">Happy Birthday, Beautiful! 🎂</h1>
+        <p id="sub">Click the button for a surprise...</p>
+        <button onclick="reveal()">Open Letter 💌</button>
+    </div>
+
+    <script>
+        function reveal() {
+            document.getElementById('msg').innerText = "I Love You So Much!";
+            document.getElementById('sub').innerText = "You are the best gift of my life. Stay happy always! ❤️";
+        }
+    </script>
+</body>
+</html>
